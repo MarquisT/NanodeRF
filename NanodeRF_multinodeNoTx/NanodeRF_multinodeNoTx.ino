@@ -254,10 +254,10 @@ static void my_callback (byte status, word off, word len) {
 
     if (hour>0 || minute>0 || second>0) 
     {  
-      char data[] = {'t',hour,minute,second};
-      int i = 0; while (!rf12_canSend() && i<10) {rf12_recvDone(); i++;}
-      rf12_sendStart(0, data, sizeof data);
-      rf12_sendWait(0);
+      //char data[] = {'t',hour,minute,second};
+      //int i = 0; while (!rf12_canSend() && i<10) {rf12_recvDone(); i++;}
+      //rf12_sendStart(0, data, sizeof data);
+      //rf12_sendWait(0);
     }
   }
 }
